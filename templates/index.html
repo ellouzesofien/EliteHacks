@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>EliteHacks — Лучшие читы</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{% static 'logo.svg' %}" alt="EliteHacks">
+        </div>
+        <nav class="nav">
+            <button class="menu-btn">Меню</button>
+            <button class="login-btn">Авторизоваться</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content animate-fadein">
+                <h1>
+                    Лучшие читы —<br>
+                    твое <span class="highlight">огромное</span> преимущество
+                </h1>
+                <p class="desc">
+                    Широкий выбор читов для популярных игр с гарантией безопасности и стабильной работы.
+                </p>
+                <button class="cta-btn animate-bounce" onclick="window.location.href='/catalog/'">Перейти в каталог</button>
+            </div>
+            <div class="hero-img animate-glow">
+                <img src="{% static 'hero-characters.png' %}" alt="Герои">
+            </div>
+        </section>
+        <section class="game-cards">
+            <h2>Топ месяца</h2>
+            <div class="cards-list">
+                <!-- Пример карточки -->
+                <div class="card animate-card">
+                    <img src="{% static 'pubg.jpg' %}" alt="PUBG">
+                    <div class="card-content">
+                        <span class="card-title">PUBG</span>
+                        <span class="card-tag">Топ месяца</span>
+                        <button class="card-btn" onclick="window.location.href='/catalog/pubg'">Подробнее</button>
+                    </div>
+                </div>
+                <!-- Добавьте остальные карточки аналогично -->
+                <div class="card animate-card">
+                    <img src="{% static 'tarkov.jpg' %}" alt="Escape From Tarkov">
+                    <div class="card-content">
+                        <span class="card-title">Escape From Tarkov</span>
+                        <span class="card-tag">Топ месяца</span>
+                        <button class="card-btn" onclick="window.location.href='/catalog/tarkov'">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card animate-card">
+                    <img src="{% static 'hwid.jpg' %}" alt="HWID SPOOFER">
+                    <div class="card-content">
+                        <span class="card-title">HWID SPOOFER</span>
+                        <span class="card-tag">Топ месяца</span>
+                        <button class="card-btn" onclick="window.location.href='/catalog/hwid'">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <h2>Почему выбрать нас?</h2>
+            <ul>
+                <li>Качество и надежность — только лучшие разработчики и эксклюзивные продукты.</li>
+                <li>Техническая поддержка 24/7.</li>
+                <li>Постоянные скидки и акции для постоянных клиентов.</li>
+            </ul>
+            <h2>Наш опыт</h2>
+            <p>Уже более 10 лет на рынке. Тысячи довольных клиентов.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="{% static 'logo.svg' %}" alt="EliteHacks">
+        </div>
+        <div class="footer-links">
+            <a href="#">Контакты</a>
+            <a href="#">Гарантии</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="{% static 'discord.svg' %}" alt="Discord"></a>
+            <a href="#"><img src="{% static 'telegram.svg' %}" alt="Telegram"></a>
+            <a href="#"><img src="{% static 'vk.svg' %}" alt="VK"></a>
+        </div>
+        <div class="footer-copy">
+            Elite Hacks © 2025
+        </div>
+    </footer>
+</body>
+</html>

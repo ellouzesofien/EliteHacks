@@ -1,0 +1,240 @@
+body {
+    background: #111217;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181a1f;
+    padding: 20px 40px;
+}
+.logo img {
+    height: 40px;
+}
+.nav {
+    display: flex;
+    gap: 12px;
+}
+.menu-btn, .login-btn {
+    background: #B7FF44;
+    color: #111217;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.menu-btn:hover, .login-btn:hover {
+    background: #d1ff7a;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px 0 40px;
+    min-height: 500px;
+    position: relative;
+}
+.hero-content {
+    max-width: 580px;
+}
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+.highlight {
+    color: #B7FF44;
+    background: #222;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+.desc {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.cta-btn {
+    background: #B7FF44;
+    color: #111217;
+    padding: 18px 38px;
+    border-radius: 16px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    box-shadow: 0 2px 18px #b7ff4430;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    animation: bounce 1.5s infinite;
+}
+.cta-btn:hover {
+    background: #d1ff7a;
+    transform: scale(1.06);
+}
+.hero-img {
+    max-width: 400px;
+    animation: glow 2s infinite alternate;
+}
+.hero-img img {
+    width: 100%;
+    filter: drop-shadow(0 0 40px #B7FF44);
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-8px);}
+}
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 20px #B7FF44);}
+    100% { filter: drop-shadow(0 0 40px #B7FF44);}
+}
+.animate-fadein {
+    animation: fadein 1.2s;
+}
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.game-cards {
+    padding: 40px;
+}
+.game-cards h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #B7FF44;
+    letter-spacing: 1px;
+}
+.cards-list {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+.card {
+    background: #181a1f;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 260px;
+    box-shadow: 0 2px 18px #b7ff4430;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    animation: cardin 1.8s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 36px #b7ff4480;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.card-tag {
+    background: #B7FF44;
+    color: #111217;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+.card-btn {
+    margin-top: 8px;
+    background: #B7FF44;
+    color: #111217;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.card-btn:hover {
+    background: #d1ff7a;
+}
+@keyframes cardin {
+    from { opacity: 0; transform: scale(0.7);}
+    to { opacity: 1; transform: scale(1);}
+}
+.about {
+    padding: 40px;
+    background: #16181c;
+    border-radius: 20px;
+    margin: 40px;
+    color: #fff;
+    box-shadow: 0 2px 18px #b7ff4410;
+}
+.about h2 {
+    color: #B7FF44;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.about ul {
+    padding-left: 22px;
+    margin-bottom: 22px;
+}
+.about li {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+.footer {
+    background: #181a1f;
+    padding: 32px 40px 18px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B7FF44;
+}
+.footer-logo img {
+    height: 30px;
+    margin-bottom: 14px;
+}
+.footer-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+.footer-links a {
+    color: #B7FF44;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #fff;
+}
+.footer-social {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+.footer-social img {
+    height: 26px;
+    filter: brightness(1.1);
+    transition: filter 0.2s;
+}
+.footer-social img:hover {
+    filter: brightness(2);
+}
+.footer-copy {
+    font-size: 15px;
+    color: #B7FF44;
+}
