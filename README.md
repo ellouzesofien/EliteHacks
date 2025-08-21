@@ -1,4 +1,4 @@
-# EliteHacks Django Site
+#  Django Site
 
 ## Быстрый старт
 
